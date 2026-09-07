@@ -1,0 +1,279 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>余点 · AI 算法与大模型应用 作品集</title>
+<meta name="description" content="余点 — 计算机科学·人工智能方向。RAG 检索链路、多智能体协作、真实商业交付与零样本学习研究。">
+<style>
+:root{--bg:#fbfaf8;--fg:#16181c;--mut:#5d646d;--line:#e3e0da;--card:#fff;--acc:#8a4b2a}
+@media(prefers-color-scheme:dark){:root{--bg:#131417;--fg:#e9eaec;--mut:#9aa1ab;--line:#2a2d33;--card:#1a1c20;--acc:#d99a6c}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+header{padding:64px 0 40px;border-bottom:1px solid var(--line)}
+h1{font-size:34px;letter-spacing:4px;font-weight:700;margin-bottom:10px}
+.tag{color:var(--acc);font-weight:700;font-size:15px;letter-spacing:1px;margin-bottom:16px}
+.lede{font-size:17px;color:var(--mut);max-width:660px}
+.meta{margin-top:22px;font-size:14px;color:var(--mut);display:flex;flex-wrap:wrap;gap:8px 18px}
+.meta a{border-bottom:1px solid var(--line);text-decoration:none;padding-bottom:1px}
+.meta a:hover{border-color:var(--acc);color:var(--acc)}
+h2{font-size:13px;letter-spacing:3px;color:var(--mut);font-weight:700;margin:56px 0 20px;text-transform:uppercase}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:22px}
+.shot{display:block;width:100%;height:auto;border-top:1px solid var(--line)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.grid2 img{width:100%;height:100%;object-fit:cover;display:block}
+.body{padding:22px 24px 24px}
+.ttl{font-size:19px;font-weight:700;margin-bottom:4px}
+.sub{font-size:13px;color:var(--mut);margin-bottom:14px}
+.desc{font-size:15px;color:var(--fg);opacity:.9}
+.desc b{color:var(--acc)}
+ul.pts{margin:12px 0 0;padding-left:18px;font-size:14.5px;color:var(--mut)}
+ul.pts li{margin:5px 0}
+.cat{font-size:12px;letter-spacing:2px;font-weight:700;color:var(--acc);margin-bottom:8px}
+.links{margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);display:flex;flex-direction:column;gap:7px}
+.lk{font-size:13.5px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.lk .lb{color:var(--mut);flex:0 0 auto}
+.lk a{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--acc);text-decoration:none;border-bottom:1px solid var(--line);word-break:break-all}
+.lk a:hover{border-color:var(--acc)}
+.paper{border-left:2px solid var(--line);padding:2px 0 6px 16px;margin-bottom:26px}
+.paper:hover{border-color:var(--acc)}
+.au{font-size:13px;color:var(--mut);margin-top:5px}
+.au b{color:var(--fg)}
+.kv{font-size:13px;color:var(--mut);margin-top:6px;display:grid;grid-template-columns:auto 1fr;gap:2px 14px}
+.kv dt{color:var(--acc);font-weight:700;white-space:nowrap}
+.kv dd{margin:0;word-break:break-word}
+table.res{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:10px}
+table.res th,table.res td{border:1px solid var(--line);padding:4px 8px;text-align:center}
+table.res th{background:rgba(138,75,42,.07);font-weight:700}
+table.res td:first-child,table.res th:first-child{text-align:left}
+.small{font-size:12.5px;color:var(--mut);margin-top:8px;line-height:1.7}
+.paper .t{font-size:15px;font-weight:700;line-height:1.5}
+.paper .j{font-size:13.5px;color:var(--mut);margin-top:3px}
+.paper .n{font-size:14px;color:var(--mut);margin-top:7px}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;background:var(--acc);color:#fff;font-weight:700;letter-spacing:.5px;vertical-align:2px}
+footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+@media(max-width:640px){header{padding:40px 0 28px}h1{font-size:27px}.lede{font-size:15.5px}.body{padding:18px 18px 20px}.grid2{grid-template-columns:1fr}h2{margin:42px 0 16px}}
+</style></head><body><div class="wrap">
+
+<header>
+  <div class="tag">AI 算法 · 大模型应用</div>
+  <h1>余 点</h1>
+  <p class="lede">计算机科学 · 人工智能方向。做 RAG 检索链路与多智能体系统，也独立承接过收费交付的商业项目；研究方向是广义零样本学习，一作论文在投 <b>Pattern Recognition Letters</b>，二作论文已见刊 <b>The Visual Computer</b>（SCI Q2）。</p>
+  <div class="meta">
+    <span>Monash University · 计算机科学（AI 方向）</span>
+    <span>广东工业大学 · GPA 4.38/5.0，专业排名 1/352</span>
+    <a href="https://github.com/yu544">github.com/yu544</a>
+    <a href="mailto:dyuu0033@student.monash.edu">dyuu0033@student.monash.edu</a>
+  </div>
+</header>
+
+<div class="card"><div class="body">
+    <div class="cat">AI 文旅 · RAG 检索与溯源</div>
+    <div class="ttl">古建智寻 · AI 文旅 RAG 导览问答平台 <span class="badge">国家二等奖</span></div>
+    <div class="sub">第一作者 / 负责人 · 2026.03 – 2026.07 · 全国大学生计算机设计大赛</div>
+    <div class="desc">通用大模型回答古建问题会编造年代与形制。把上百份专业学术文献做成 <b>2001 组切片</b>的领域知识库，检索链路使每条回答绑定资料出处、可溯源。</div>
+    <ul class="pts">
+      <li><b>检索</b>：手写 BM25（k1=1.5, b=0.75），中文按 bigram 切分提召回，不依赖分词器</li>
+      <li><b>重排序</b>：BM25 分数叠加建筑名 / 省份 / 品类等元数据多路加权，去重后取 Top-5</li>
+      <li><b>实体归一</b>：别名表把「故宫 / 紫禁城 / 太和殿」收敛到同一实体</li>
+      <li><b>为什么不用向量库</b>：2001 切片规模下 BM25 召回已足够，且免 GPU、可解释、冷启动零成本</li>
+      <li>交互：MediaPipe 手势操控知识星云、中英一键切换、场景化 AI 生成配乐</li>
+    </ul>
+    <div class="links">
+      <div class="lk"><span class="lb">在线体验</span><a href="https://shiyuan-1229.github.io/gujianzhu-web/">https://shiyuan-1229.github.io/gujianzhu-web/</a></div>
+      <div class="lk"><span class="lb">备用站</span><a href="https://gujianzhu.ccrate.cc">https://gujianzhu.ccrate.cc</a></div>
+      <div class="lk"><span class="lb">源码</span><a href="https://github.com/shiyuan-1229/gujianzhu-web">https://github.com/shiyuan-1229/gujianzhu-web</a></div>
+    </div>
+  </div>
+<img class="shot" src="img/gjzx-gugong.jpg" alt="故宫探秘等距地图">
+<div class="grid2"><img src="img/gjzx-home.jpg" alt="首页"><img src="img/gjzx-map.jpg" alt="全国古建点位地图"></div>
+</div>
+
+<div class="card"><div class="body">
+  <div class="cat">商业交付 · 多模态识别与业务风控</div>
+  <div class="ttl">儿童保险智能投保系统 · 多模态识别与业务风控</div>
+  <div class="sub">独立承接并交付 · 2.5 万元 · 9 家门店 / 8 个工商主体 · 2026.07 – 至今</div>
+  <div class="desc">面向连锁攀岩场馆的内部员工系统。把「电话问家长 + 手工核验 + 人工记录」的线下投保流程，改成可追踪的业务闭环。<b>客户最在意的从来不是功能，是未成年人数据不能出事</b>，所以安全是需求阶段的产品约束，不是上线后的补丁。</div>
+  <ul class="pts">
+    <li><b>识别只做候选召回</b>：一次人脸误匹配等于给错的孩子投保 —— 拍照检索返回 Top-N 候选，经人工确认才进入投保</li>
+    <li><b>按真实退化场景设阈值</b>：门店逆光、侧脸、多人同框、资料照质量差，低于阈值即拒识并转人工，不做低置信度硬猜</li>
+    <li><b>字段级加密 + HMAC 盲索引</b>：姓名 / 证件号 / 手机号 AES-256-GCM 加密，同时支持不解密查重</li>
+    <li><b>保险异步链路状态机</b>：承保回调丢失不会让订单永久卡单</li>
+  </ul>
+  <div class="links"><div class="lk"><span class="lb">脱敏 Case Study</span><a href="https://github.com/yu544/child-insurance-case-study">https://github.com/yu544/child-insurance-case-study</a></div></div>
+</div></div>
+
+<div class="card">
+  
+  <div class="body">
+  <div class="cat">教育科技 · LLM 应用设计</div>
+  <div class="ttl">策算学堂 · 微课教学与算法仿真平台 <span class="badge">国家二等奖</span></div>
+  <div class="sub">第三作者 · 主导 AI 能力设计 · 2026.01 – 2026.06</div>
+  <div class="desc">用《田忌赛马》讲透贪心算法。<b>AI 直接给答案会削弱练习价值，完全不提示又会提高流失</b> —— 这个两难是我在这个项目里主要在解的问题。</div>
+  <ul class="pts">
+    <li><b>三级申请式提示</b>：L1 只给方向 / L2 给关键判断逻辑 / L3 给伪代码骨架，system prompt 明确禁止输出可直接复制的完整代码</li>
+    <li><b>Provider 无关</b>：LLM 调用封装为 OpenAI 兼容协议，环境变量切换 DeepSeek / OpenAI，不改业务代码</li>
+    <li><b>无密钥可降级</b>：未配置 API Key 时自动落到本地知识库，答辩与他人 clone 后功能不开天窗</li>
+    <li>已进入大学课堂与社区支教实测，回收有效问卷 <b>1076 份</b>，满意度 <b>93.33%</b></li>
+  </ul>
+  <div class="links"><div class="lk"><span class="lb">源码与文档</span><a href="https://github.com/yu544/cesuanxuetang">https://github.com/yu544/cesuanxuetang</a></div></div>
+</div><img class="shot" src="img/csxt-sim.jpg" alt="田忌赛马贪心策略仿真实验">
+<div class="grid2"><img src="img/csxt-home.jpg" alt="学生端首页与 AI 学习向导"><img src="img/csxt-stats.jpg" alt="管理端学情与反馈分析"></div>
+</div>
+
+<div class="card"><div class="body">
+    <div class="cat">非遗数字传播 · 团队负责人</div>
+    <div class="ttl">溯川探新 · 英歌舞非遗数字传播</div>
+    <div class="sub">队长 · 2025.05 – 2026.06 · 揭阳市「百千万工程」青年大学生突击队优秀项目</div>
+    <div class="desc">英歌舞是国家级非物质文化遗产，但传播长期困在「本地演出 + 短视频片段」里，外地与海外受众看得到热闹、看不懂门道。<b>我带跨学科团队把它做成一套可浏览、可检索、可交互的数字资产</b>：实地调研、非遗传承人访谈、宣传片拍摄、文旅网站与小程序、文创产品设计与对外汇报。</div>
+    <ul class="pts">
+      <li>网站按认知路径分层：起源与历史 → 脸谱与装扮 → 流派对比 → 国际足迹 → 新旧回声 → 文创展示，中英双语切换面向海外受众</li>
+      <li>视频赏析 / VR 体验 / 在线展馆 / 传承人风采四个入口，把静态资料变成可停留的体验</li>
+      <li>另获校级优秀实践队、优秀实践队员、优秀调研报告、优秀视频等多项荣誉</li>
+    </ul>
+    <div class="links">
+      <div class="lk"><span class="lb">文旅网站</span><a href="https://yingge-culture-2026.pages.dev/">https://yingge-culture-2026.pages.dev/</a></div>
+      <div class="lk"><span class="lb">小程序</span><a href="https://app-ceado06oun0i.appmiaoda.com">https://app-ceado06oun0i.appmiaoda.com</a></div>
+    </div>
+  </div>
+<img class="shot" src="img/yingge.jpg" alt="英歌舞非遗数字传播平台">
+</div>
+
+<h2>企业实习项目</h2>
+<p style="font-size:14px;color:var(--mut);margin-bottom:18px">珠海金智维人工智能股份有限公司 · 智能应用组 ｜ AI 应用开发实习生 ｜ 2026.01 – 2026.03。以下均为脱敏描述，不含客户名称、生产配置与业务数据。</p>
+
+<div class="card">
+  
+  
+  <div class="body">
+    <div class="cat">文旅数据产品 · 商业计划与原型</div>
+    <div class="ttl">迹客行 · 广州文旅智能推荐系统</div>
+    <div class="sub">项目负责人 · 10 人团队 · 大创校级立项 / 「挑战杯」校级奖项</div>
+    <div class="desc">广州核心景区日均接待量超承载量 <b>33%</b>，游客行程规划依赖的社交平台信息可信度仅 <b>36%</b>、OTA 平台推荐同质化率达 <b>79%</b>。产品把「去哪、何时去、怎么走」拆成可计算的决策问题：用实时拥挤度、景点评分、天气与节假日合成「优质度指数」，生成千人千面的行程方案。</div>
+    <ul class="pts">
+      <li><b>选加权评分而不是复杂模型</b>：拥挤度 40% + 景点评分 30% + 实时天气 20% + 节假日标签 10% 四维加权生成「今日推荐」—— 这是明确的工程取舍，为的是避开复杂模型的高计算成本与冷启动难题</li>
+      <li><b>v1.0（已完成）</b>：Python 单语言栈，PyQt5 + Designer 自建图形界面；requests + BeautifulSoup 自写爬虫采集旅游平台攻略数据；Matplotlib 做评分直方图与客流趋势可视化；接入天气 API</li>
+      <li><b>v1.5（开发中）</b>：转 Web / 微信小程序形态，ECharts + 地图 API 渲染分钟级更新的实时热力图，红 / 黄 / 绿三色标注拥挤等级</li>
+      <li><b>规划中</b>：以多影响嵌入 POI 模型为核心，用时序模型预测未来 2 小时拥挤度，并接入 LLM 做「对话 – 分析 – 生成」的行程定制</li>
+      <li><b>知识产权</b>：软件著作权《迹客行 APP V1.0》登记号 2026SR0105318（第 2 著作权人）；外观设计专利申请中</li>
+    </ul>
+  </div>
+<img class="shot" src="img/jkx-alg.jpg" alt="核心算法：多源数据融合与加权评分">
+<img class="shot" src="img/jkx-app.jpg" alt="产品界面与创新点">
+</div>
+
+<div class="card"><div class="body">
+  <div class="cat">企业实习 · RAG 知识库问答</div>
+  <div class="ttl">能源集团采购文档审核智能体 · RAG 采购智能客服</div>
+  <div class="sub">535 人天 / 10+ 人跨职能团队 ｜ 本人独立交付该模块全部 5 个功能点，37 人天</div>
+  <ul class="pts">
+    <li><b>双源答案融合</b>：内部知识库覆盖不全、答不了新政策；接入外部搜索做双路召回，设计优先级与冲突取舍规则，保证内部权威口径不被外部结果覆盖</li>
+    <li><b>流式响应与会话状态</b>：接入 LLM 流式输出并实现上下文管理与异常重试，把多轮记忆抽象为可回溯的会话对象</li>
+    <li><b>冷启动引导</b>：经办人不清楚知识库边界，基于输入做相关性计算与热点问题召回，把开放式提问收敛为可点击入口</li>
+  </ul>
+</div></div>
+
+<div class="card"><div class="body">
+  <div class="cat">企业实习 · 多智能体协作</div>
+  <div class="ttl">工伤医疗费用审核 · CrewAI 多智能体系统</div>
+  <div class="sub">多智能体协作 + OCR 文档理解</div>
+  <div class="desc">工伤报销的核心难题是<b>「伤病分离」</b>：同一份住院病历里，工伤直接治疗、工伤延伸疾病、个人既往病的费用必须拆开分别定责，人工审核慢且各经办人标准不一。</div>
+  <ul class="pts">
+    <li>拆成医疗专家 / 医保专家 / 综合分析师三个智能体串行，上游产出作为下游 context 逐级收敛</li>
+    <li><b>我负责三个智能体的角色边界与推理口径设计</b> —— 不写死分工，医疗判断和医保政策判断会在同一个 prompt 里互相污染</li>
+    <li>终态输出用固定列表格锁死，把主观判定变成经办人可逐行复核的结论</li>
+  </ul>
+</div></div>
+
+<div class="card"><div class="body">
+  <div class="cat">企业实习 · 架构与工程</div>
+  <div class="ttl">汉莎技术（深圳）双语 HR 知识库问答助手 · 零侵入会话持久化</div>
+  <div class="sub">Flask 旁路代理 + Redis</div>
+  <div class="desc">给一个<b>已经上线</b>的企业问答系统补历史会话能力，约束是不能改动存量前后端任何业务代码。</div>
+  <ul class="pts">
+    <li>做成旁路代理层夹在前端与后端之间，转发的同时旁路落库，公司代码零改动</li>
+    <li>难点在流式：一边把 chunk 往下游吐，一边累积完整回复，流结束后整轮落 Redis；读超时放宽到 5 分钟避免长回答未传完就断连</li>
+    <li>存储故障时自动降级 —— 代理照常转发聊天，只是不落库，主对话链路不中断</li>
+  </ul>
+</div>
+<img class="shot" src="img/hansha.jpg" alt="LTS HR 双语问答助手界面">
+</div>
+
+<h2>学术研究</h2>
+<p style="font-size:14px;color:var(--mut);margin-bottom:22px">主线为<b>广义零样本学习（GZSL）</b>，导师 Meng Min（广东工业大学计算机学院）。两篇 SCI 论文与同门林小琴互为一作 / 二作，同攻「已见类过度自信、未见类系统性低估」问题，分别从判别式校准与生成式特征质量两条路径切入。</p>
+
+<div class="paper">
+  <div class="t">Dynamic Concept Memory and Contrastive Feature Generation for Robust Generalized Zero-Shot Learning</div>
+  <div class="au">Xiaoqin Lin, <b>Dian Yu</b>（第二作者）, Min Meng（通讯）, Jigang Wu　·　广东工业大学计算机学院</div>
+  <dl class="kv">
+    <dt>期刊</dt><dd>The Visual Computer (Springer)　Vol. 42, No. 10, Article 468</dd>
+    <dt>状态</dt><dd>2026-08-12 已见刊（收稿 2026-04-26 / 录用 2026-07-30）</dd>
+    <dt>收录</dt><dd>SCI-EXPANDED　WOS:001847525300001　·　IF 3.4　·　JCR Q2（软件工程 44/128）　·　中科院大类 3 区</dd>
+    <dt>DOI</dt><dd><a href="https://doi.org/10.1007/s00371-026-04692-8">https://doi.org/10.1007/s00371-026-04692-8</a></dd>
+    <dt>检索记录</dt><dd><a href="https://www.webofscience.com/wos/woscc/full-record/WOS:001847525300001">Web of Science · WOS:001847525300001</a></dd>
+    <dt>出版页</dt><dd><a href="https://link.springer.com/article/10.1007/s00371-026-04692-8">https://link.springer.com/article/10.1007/s00371-026-04692-8</a></dd>
+    <dt>代码</dt><dd><a href="https://github.com/99ww5/DCM-GAN">https://github.com/99ww5/DCM-GAN</a></dd>
+  </dl>
+  <div class="small"><b>方法 DCM-GAN</b>：生成式 ZSL 改用 CLIP 类名嵌入替代人工标注属性作为语义条件，省掉标注成本，但类名语义只编码高层类别信息、缺细粒度视觉线索，导致合成特征类内松散、类间边界模糊。动态概念记忆（DCM）从已见类的 CLIP 局部 token 中挖掘可迁移视觉概念增强弱语义；对比生成网络（CGN）在条件 f-WGAN 上施加双重对比约束。</div>
+  <div class="small"><b>我的贡献</b>：提出标题两大贡献之一的<b>「对比特征生成」</b>——读该方向文献后自行构思并落地：实例级用监督对比损失（两层 MLP 投影头 + 温度 τ）压紧类内分布，类别级把增强语义经可学习线性层映射成类原型做原型对比，强制生成特征对齐类语义。并负责 CUB 与 AWA2 两个基准的训练、超参搜索与消融实验。</div>
+  <table class="res"><tr><th>GZSL 调和平均 H (%)</th><th>AWA2</th><th>SUN</th><th>CUB</th><th>FLO</th></tr>
+  <tr><td>DCM-GAN（本文）</td><td><b>93.79</b></td><td><b>69.04</b></td><td><b>68.93</b></td><td>84.00</td></tr>
+  <tr><td>CLIP+TF-VAEGAN（同设定复现基线）</td><td>—</td><td>52.40</td><td>60.92</td><td>—</td></tr></table>
+  <div class="small">不使用任何人工标注属性，CUB / SUN / AWA2 的 H 仍超过全部依赖属性标注的对比方法。<b>消融隔离出我这个模块的净贡献</b>：仅加入 CGN 即把 H 由基线 59.65 → 64.04（CUB）、50.75 → 63.82（SUN），其中 SUN 未见类精度 41.30 → 67.78（<b>+26.5pp</b>）。</div>
+</div>
+
+
+<div class="paper">
+  <div class="t">CAVS: Calibrated Adaptive Visual-Semantic Learning for Balanced Generalized Zero-Shot Recognition</div>
+  <div class="au"><b>Dian Yu</b>（第一作者）, Xiaoqin Lin, Min Meng（通讯）　·　广东工业大学计算机学院</div>
+  <dl class="kv">
+    <dt>期刊</dt><dd>Pattern Recognition Letters (Elsevier, SCI)</dd>
+    <dt>状态</dt><dd>Under Review（稿号 PRLETTERS-D-26-01626）</dd>
+    <dt>实现</dt><dd>ImageNet-1K 预训练 ViT-B/16，单卡 RTX 4080</dd>
+  </dl>
+  <div class="small"><b>问题</b>：强 ViT 方法在 GZSL 上的已见 / 未见类精度差长期超过 20 个点。在自建的双分支 ViT-B/16 基线上验证该差距<b>并非容量不足</b>（该基线 AWA2 H 已达 77.4%，高于 SVIP, ICCV'25），从而把成因定位为三个耦合因素：视觉-语义对齐不对称、双分支决策冗余、与样本无关的固定校准偏置。</div>
+  <div class="small"><b>方法</b>：不扩大 backbone，而是按成因各设计一个模块——<b>DSAM</b> 在属性空间施加双向对称约束、<b>BCD</b> 对双分支决策显式去相关、<b>ADBC</b> 以端到端学习的样本级校准替代全局固定偏置。</div>
+  <table class="res"><tr><th>数据集</th><th>未见类 U</th><th>已见类 S</th><th>调和平均 H</th></tr>
+  <tr><td>CUB</td><td>73.4</td><td>78.5</td><td><b>75.9</b></td></tr>
+  <tr><td>AWA2</td><td>71.9</td><td>88.8</td><td><b>79.5</b></td></tr>
+  <tr><td>SUN</td><td>54.2</td><td>51.3</td><td><b>52.7</b></td></tr></table>
+  <div class="small">三个数据集的 H 均为对比方法最优。关键在于<b>提升未见类精度并未牺牲已见类</b>：AWA2 上未见类 65.4 → 71.9（+6.5pp）的同时，已见类 87.7 → 88.8 反而上升；三模块合计仅增加 <b>1.1%</b> 参数量。消融显示三者联合优化稳定优于任意子集组合。</div>
+</div>
+
+<div class="paper">
+  <div class="t">Measuring Fairness in Competitive Entertainment Program Evaluation Mechanisms and Exploring Multi-Factor Driving Characteristics</div>
+  <div class="au"><b>Dian Yu</b>（第一作者 + 通讯作者）</div>
+  <dl class="kv">
+    <dt>出处</dt><dd>ICCSM 2026　·　ITM Web of Conferences (EDP Sciences)　Vol. 89, 04019　·　CPCI 检索</dd>
+    <dt>状态</dt><dd>2026-08-14 已在线出版</dd>
+    <dt>DOI</dt><dd><a href="https://doi.org/10.1051/itmconf/20268904019">https://doi.org/10.1051/itmconf/20268904019</a></dd>
+    <dt>全文</dt><dd>EDP Sciences 开放获取，DOI 直达可读全文</dd>
+  </dl>
+  <div class="small">用三层嵌套 Spearman 秩相关检验量化两套排序机制之间的公平性差异，测得 <b>16% 系统性偏差</b>；构建 LASSO + Random Forest + XGBoost 的 <b>Stacking 集成</b>预测评分，并用 <b>SHAP 归因</b>拆解主导偏差的驱动因子，把「机制是否公平」从主观争议变成可定位、可复算的评测结论。</div>
+</div>
+
+<div class="paper">
+  <div class="t">Design and Optimization of a Robust Adaptive Voting System from a Multi-Dimensional Stakeholder Perspective</div>
+  <div class="au">Zijun Zou, Zilv Liu, <b>Dian Yu</b>（第三作者）, Tongxin Li　·　广东工业大学国际教育学院</div>
+  <dl class="kv">
+    <dt>出处</dt><dd>SSDAM 2026　·　Proceedings of the 1st International Conference on Smart System Design, Application and Mechatronics (SciTePress)　·　CPCI 检索</dd>
+    <dt>DOI</dt><dd><a href="https://doi.org/10.5220/0015178400005244">https://doi.org/10.5220/0015178400005244</a></dd>
+    <dt>出版页</dt><dd><a href="https://www.scitepress.org/Link.aspx?doi=10.5220/0015178400005244">SciTePress 数字图书馆</a></dd>
+  </dl>
+</div>
+
+<div class="paper">
+  <div class="t">A Study on Reverse Inference of Fan Voting Shares Based on Prior Guidance and Temporal Regularization</div>
+  <div class="au">Zilv Liu, <b>Dian Yu</b>（第二作者）, Zijun Zou, Tongxin Li</div>
+  <dl class="kv">
+    <dt>出处</dt><dd>ICDSES 2026　·　CPCI 检索</dd>
+    <dt>状态</dt><dd>已录用</dd>
+  </dl>
+</div>
+
+<footer>
+  余点 · dyuu0033@student.monash.edu · <a href="https://github.com/yu544">github.com/yu544</a><br>
+  企业项目均为脱敏描述，不含客户名称、内部地址、密钥与业务数据。
+</footer>
+
+</div></body></html>
