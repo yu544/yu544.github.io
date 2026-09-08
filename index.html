@@ -64,8 +64,7 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
   .tl-wrap{margin-left:calc(-50vw + 50%);margin-right:calc(-50vw + 50%);padding:0 48px}
   .tl-head{max-width:940px;margin-left:auto;margin-right:auto}
   .tl{position:relative}
-  .tl::after{content:"";position:absolute;right:48px;top:0;bottom:0;width:38px;pointer-events:none;
-    background:linear-gradient(to right,transparent,var(--bg))}
+  
 }
 .tl-head{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:12.5px;color:var(--mut);margin-bottom:16px}
 .tl-key{display:inline-flex;align-items:center;gap:6px}
@@ -74,7 +73,7 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
 .tl-hint{margin-left:auto;font-size:11.5px;opacity:.8}
 
 .tl{position:relative;padding:64px 76px 68px;overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch}
-.tl-rail{position:relative;min-width:1000px;height:4px;border-radius:2px;
+.tl-rail{position:relative;min-width:1300px;height:4px;border-radius:2px;
   background:linear-gradient(to right,var(--gdut) 0%,var(--gdut) var(--split),var(--mon) var(--split),var(--mon) 100%)}
 .tl-n{position:absolute;top:50%;transform:translate(-50%,-50%);cursor:default}
 .tl-dot{width:11px;height:11px;border-radius:50%;background:var(--bg);border:3px solid var(--gdut);box-sizing:content-box;transition:.15s}
@@ -83,9 +82,9 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
 .tl-n.big.m .tl-dot{background:var(--mon);box-shadow:0 0 0 3px var(--mon)}
 .tl-n.link{cursor:pointer}
 .tl-n.link:hover .tl-dot{transform:scale(1.35)}
-.tl-lb{position:absolute;left:50%;transform:translateX(-50%);width:132px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mut)}
+.tl-lb{position:absolute;left:50%;transform:translateX(-50%);width:120px;text-align:center;font-size:11.5px;line-height:1.45;color:var(--mut)}
 .tl-lb b{display:block;font-size:12px;color:var(--fg);font-weight:700}
-.tl-lb .dt{font-size:10.5px;letter-spacing:.4px;color:var(--gdut);font-weight:700}
+.tl-lb .dt{font-size:9.6px;letter-spacing:.4px;color:var(--gdut);font-weight:700}
 .tl-n.m .tl-lb .dt{color:var(--mon)}
 .tl-n.up .tl-lb{bottom:22px} .tl-n.dn .tl-lb{top:22px}
 .tl-n.link .tl-lb b{border-bottom:1px dashed var(--line)}
@@ -356,19 +355,21 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
 </div><script>
 (function(){
   var D=[
-    {d:'2024.09',t:'入读广东工业大学',s:'计算机科学与技术（国际班）',p:4},
-    {d:'2025.03',t:'雅思 6.5',s:'学术英语口语 97',p:13},
-    {d:'2025.05',t:'英歌舞非遗数字传播',s:'队长 · 揭阳突击队优秀项目',p:22,go:'yingge',img:'img/yingge.jpg'},
-    {d:'2025.09',t:'一等奖学金 · 学习标兵',s:'同期启动 迹客行',p:32,go:'jikexing',img:'img/jkx-alg.jpg'},
-    {d:'2026.01',t:'金智维实习 · 策算学堂',s:'软著《迹客行 APP》登记',p:42,go:'huadian',img:'img/csxt-sim.jpg'},
-    {d:'2026.03',t:'古建智寻 启动',s:'RAG 文旅导览问答',p:52,go:'gujian',img:'img/gjzx-gugong.jpg'},
-    {d:'2026.05',t:'忠正货场管理系统',s:'6 万元商业交付',p:60},
-    {d:'2026.06',t:'广工毕业 · 排名 1/352',s:'计设大赛国家二等奖 ×2',p:69,big:1},
-    {d:'2026.07',t:'入读 Monash',s:'计算机科学 · AI 方向',p:79,m:1,big:1},
-    {d:'2026.07',t:'蓝天攀岩儿童保险',s:'2.5 万元 · 9 门店上线',p:87,m:1,go:'lantian'},
-    {d:'2026.08',t:'The Visual Computer',s:'SCI 见刊 · IF 3.4 · Q2',p:95,m:1,go:'papers'}
+    {d:'2024.09',t:'入读广东工业大学',s:'计算机科学与技术',p:3},
+    {d:'2025.03',t:'雅思 6.5',s:'',p:11},
+    {d:'2025.05 – 2026.06',t:'英歌舞非遗数字传播',s:'队长 · 揭阳突击队优秀项目',p:19,go:'yingge',img:'img/yingge.jpg'},
+    {d:'2025.09',t:'一等奖学金 · 学习标兵',s:'',p:27},
+    {d:'2025.09 – 2026.06',t:'迹客行 文旅推荐系统',s:'项目负责人 · 10 人团队',p:35,go:'jikexing',img:'img/jkx-alg.jpg'},
+    {d:'2026.01 – 2026.03',t:'金智维实习',s:'AI 应用开发 · 535 人天项目',p:43,go:'huadian'},
+    {d:'2026.01 – 2026.08',t:'策算学堂微课平台',s:'主导 AI 能力设计',p:51,go:'cesuan',img:'img/csxt-sim.jpg'},
+    {d:'2026.03 – 2026.07',t:'古建智寻',s:'RAG 文旅导览问答',p:59,go:'gujian',img:'img/gjzx-gugong.jpg'},
+    {d:'2026.05',t:'忠正货场管理系统',s:'6 万元商业交付',p:66},
+    {d:'2026.06',t:'广工毕业 · 排名 1/352',s:'计设大赛国家二等奖 ×2',p:73,big:1},
+    {d:'2026.07',t:'入读 Monash',s:'计算机科学 · AI 方向',p:81,m:1,big:1},
+    {d:'2026.07 – 至今',t:'蓝天攀岩儿童保险',s:'2.5 万元 · 9 门店上线',p:86,m:1,go:'lantian'},
+    {d:'2026.08',t:'The Visual Computer',s:'SCI 见刊 · IF 3.4 · Q2',p:93,m:1,go:'papers'}
   ];
-  var SPLIT=73;
+  var SPLIT=77;
   var rail=document.getElementById('tlRail');
   if(!rail) return;
   rail.style.setProperty('--split', SPLIT+'%');
