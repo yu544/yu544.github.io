@@ -154,6 +154,8 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
       <li><b>实体归一</b>：别名表把「故宫 / 紫禁城 / 太和殿」收敛到同一实体</li>
       <li><b>为什么不用向量库</b>：2001 切片规模下 BM25 召回已足够，且免 GPU、可解释、冷启动零成本</li>
       <li>交互：MediaPipe 手势操控知识星云、中英一键切换、场景化 AI 生成配乐</li>
+      <li><b>效果评测</b>：基于 100 道人工标注问题，BM25 + 元数据重排 <b>Recall@5 达 86%</b>，较纯 BM25 提升 <b>11 个百分点</b>；人工复核显示 <b>89%</b> 回答的关键结论可由关联来源支持</li>
+      <li>校内开放推广<b>首日新增 192 名用户</b>，其中来华留学生占 <b>62%</b></li>
     </ul>
     <div class="links">
       <div class="lk"><span class="lb">在线体验</span><a href="https://shiyuan-1229.github.io/gujianzhu-web/">https://shiyuan-1229.github.io/gujianzhu-web/</a></div>
@@ -167,7 +169,7 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
 
 <div class="card" id="lantian"><div class="body">
   <div class="cat">商业交付 · 多模态识别与业务风控</div>
-  <div class="ttl">儿童保险智能投保系统 · 多模态识别与业务风控</div>
+  <div class="ttl">攀岩儿童保险智能投保系统 · 多模态识别与业务风控</div>
   <div class="sub">独立承接并交付 · 2.5 万元 · 9 家门店 / 8 个工商主体 · 2026.07 – 至今</div>
   <div class="desc">面向连锁攀岩场馆的内部员工系统。把「电话问家长 + 手工核验 + 人工记录」的线下投保流程，改成可追踪的业务闭环。<b>客户最在意的从来不是功能，是未成年人数据不能出事</b>，所以安全是需求阶段的产品约束，不是上线后的补丁。</div>
   <ul class="pts">
@@ -184,9 +186,10 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
   <div class="body">
   <div class="cat">教育科技 · LLM 应用设计</div>
   <div class="ttl">策算学堂 · 微课教学与算法仿真平台 <span class="badge">国家二等奖</span></div>
-  <div class="sub">第三作者 · 主导 AI 能力设计 · 2026.01 – 2026.08</div>
+  <div class="sub">第三作者 · 架构与 AI 设计 · 2026.01 – 2026.08</div>
   <div class="desc">用《田忌赛马》讲透贪心算法。<b>AI 直接给答案会削弱练习价值，完全不提示又会提高流失</b> —— 这个两难是我在这个项目里主要在解的问题。</div>
   <ul class="pts">
+    <li><b>前后端初始架构与技术方案</b>：负责平台前后端初始框架与技术选型，把课程学习、算法可视化、交互式编码、在线评测与 AI 提示拆成可衔接模块 —— Vue 3 / Vite 搭前端，Monaco Editor 做代码编辑，ECharts 做算法过程可视化，Express 代理 Judge0 承接判题，形成「学习—练习—运行—反馈」闭环</li>
     <li><b>三级申请式提示</b>：L1 只给方向 / L2 给关键判断逻辑 / L3 给伪代码骨架，system prompt 明确禁止输出可直接复制的完整代码</li>
     <li><b>Provider 无关</b>：LLM 调用封装为 OpenAI 兼容协议，环境变量切换 DeepSeek / OpenAI，不改业务代码</li>
     <li><b>无密钥可降级</b>：未配置 API Key 时自动落到本地知识库，答辩与他人 clone 后功能不开天窗</li>
@@ -216,7 +219,7 @@ footer{margin:64px 0 48px;padding-top:24px;border-top:1px solid var(--line);font
 </div>
 
 <h2>企业实习项目</h2>
-<p style="font-size:14px;color:var(--mut);margin-bottom:18px">珠海金智维人工智能股份有限公司 · 智能应用组 ｜ AI 应用开发实习生 ｜ 2026.01 – 2026.03。以下均为脱敏描述，不含客户名称、生产配置与业务数据。</p>
+<p style="font-size:14px;color:var(--mut);margin-bottom:18px">珠海金智维人工智能股份有限公司 · 智能应用组 ｜ AI 产品开发工程师（实习） ｜ 2026.01 – 2026.03。以下均为脱敏描述，不含客户名称、生产配置与业务数据。</p>
 
 <div class="card" id="jikexing">
   
